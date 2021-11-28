@@ -3,18 +3,33 @@
 Subject:
 1. Cinema online tickets
 2. online store
-3. todo list
-4. system for organizing personal expenses - 6 votes;)
+3. system for organizing personal expenses - 6 votes;)
+4. todo list
 
-
-###Personal Expenses business requirements:
+####Personal Expenses business requirements:
 1. track expenses
-    1. add categories
+   1. add categories
+   2. add bills
+   3. check expenses per categories
 2. track incomes
-3. track your portfolio( what stocks you have bought and sold)
-4. budgeting
-5. visual statistics
+   1. add income types
+   2. add incomes
+   3. check income per type
+3. savings
+   1. define types of saving:
+      1. deposits
+      2. stock portfolio
+      3. pension
+      4. unspent money
+      5. loans
+5. budgeting
+   1. Plan monthly expenses
+   How much can you spend on each category (e.g. stocks etc)
+   2. Plan possible incomes
+   3. Loan calculator
+6. visual stats
+   1. Comparing of incomes and expences on pie charts
 
-###Technical requirements:
+###Technical requirements
 1. Heroku cloud deploy
 2. Security
