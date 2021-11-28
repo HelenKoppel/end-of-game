@@ -7,4 +7,4 @@
 - View: view for end user
 - Controller: responsible for returning the view
 - Service: application logic
-- Repository: stores/retrives the data
+- Repository: stores/retrieves the data
