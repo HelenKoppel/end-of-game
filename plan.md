@@ -16,19 +16,20 @@ Subject:
    2. add incomes
    3. check income per type
 3. savings
-   1. define types of saving:
+   1. define types of savings e.g.:
       1. deposits
       2. stock portfolio
       3. pension
       4. unspent money
       5. loans
-5. budgeting
+4. budgeting
    1. Plan monthly expenses
-   How much can you spend on each category (e.g. stocks etc)
+      How much can you spend on each category
+      (e.g. stocks etc.)
    2. Plan possible incomes
    3. Loan calculator
-6. visual stats
-   1. Comparing of incomes and expences on pie charts
+5. visual stats
+   1. Comparing of incomes and expenses on pie charts
 
 ###Technical requirements
 1. Heroku cloud deploy
