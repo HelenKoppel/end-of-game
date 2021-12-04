@@ -15,10 +15,17 @@ public class PersonController {
     public PersonController(final PersonService service) {
         this.service = service;
     }
+
     @GetMapping("/me")
     public PersonSummary representMe() {
         log.info("representMe()");
         return service.getMyPerson();
     }
-}
 
+    @GetMapping("/new-thread")
+    public void runNewThread() {
+        log.info("new-thread");
+        service.runNewThread();
+
+    }
+}
