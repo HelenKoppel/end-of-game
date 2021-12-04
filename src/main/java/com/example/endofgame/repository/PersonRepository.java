@@ -8,9 +8,11 @@ import org.springframework.stereotype.Repository;
 @Slf4j
 public class PersonRepository {
 
+    // The line below is the same as using @Slf4j annotation
+//    private static Logger log = LoggerFactory.getLogger(PersonRepository.class);
+
     public Person findMe() {
         log.info("findMe()");
-        return new Person("Helen", "K");
+        return new Person("Mariusz", "P.");
     }
-
 }
