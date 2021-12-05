@@ -53,4 +53,11 @@ public class CategoryController {
        return ResponseEntity.created(URI.create ("/categories/" + createdCategory.id())).body(createdCategory);
     }
 
+    @DeleteMapping("/categories/{id}")
+    public ResponseEntity<Void> deleteCategoryById(@PathVariable("id)") Long idOfCategoryToDelete) {
+        log.info("trying to delete categoryById: [{}]", idOfCategoryToDelete);
+
+        service.deleteCategoryById(idOfCategoryToDelete);
+        return ResponseEntity.noContent().build();
+    }
 }
