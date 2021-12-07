@@ -54,7 +54,7 @@ public class CategoryController {
     }
 
     @DeleteMapping("/categories/{id}")
-    public ResponseEntity<Void> deleteCategoryById(@PathVariable("id)") Long idOfCategoryToDelete) {
+    public ResponseEntity<Void> deleteCategoryById(@PathVariable("id") Long idOfCategoryToDelete) {
         log.info("trying to delete categoryById: [{}]", idOfCategoryToDelete);
 
         service.deleteCategoryById(idOfCategoryToDelete);
