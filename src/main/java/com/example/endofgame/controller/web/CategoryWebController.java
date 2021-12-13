@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -26,4 +27,13 @@ public class CategoryWebController {
         return "categories/all-categories";
 
 }
+// delet-category/{id}
+    @GetMapping("delete-categories/{id}")
+    public String deleteCategoryById(@PathVariable("id") Long id) {
+        log.info("deleting category by id [{}]", id);
+
+        categoryService.deleteCategoryById(id);
+
+        return "redirect:/web/all-categories";
+    }
 }
