@@ -4,9 +4,7 @@ import com.example.endofgame.service.CategoryService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @Slf4j
@@ -32,6 +30,11 @@ public class CategoryWebController {
         return "categories/add-category-page";
     }
 
+    @PostMapping("/save-category")
+    public String saveNewCategory(@RequestParam("name") String newCategoryName) {
+        log.info("new category name: [{}]", newCategoryName);
+        return "redirect:/web/all-categories";
+    }
     // delete-category/{id}
     @GetMapping("delete-category/{id}")
     public String deleteCategoryById(@PathVariable("id") Long id) {
