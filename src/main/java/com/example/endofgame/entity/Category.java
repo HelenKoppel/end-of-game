@@ -42,5 +42,7 @@ public class Category {
     @PreUpdate
     public void beforeUpdate() {
         updateTimestamp = LocalDateTime.now();
+
+
     }
 }
